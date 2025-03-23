@@ -13,7 +13,7 @@ function addTask(columnId){
     input.value = "";
 }
 
-// document.getElementById("todo-input").addEventListener("keydown", function(event){ 
+// document.getElementById("todo-input").addEventListener("keydown", function(event){
 //     if(event.key ==="Enter"){
 //         addTask("todo");
 //     }
