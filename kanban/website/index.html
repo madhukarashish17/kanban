@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../node/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node/node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Kanban Board</title>
+</head>
+<body>
+    <div class="container-fluid mainSection col-12">
+            <div class="container-fluid optionsSection col-2 me-2"><h2>Kanban Board</h2></div>
+            <div class="container-fluid kanbanSection col-10 d-flex justif-content-between h-100">
+                <div class="todo-cards" id="todo">
+                    <h3 class="text-center">To-Do List</h3>
+                    <div class="tasks" id="todo-tasks"></div>
+                    <input type="text" class="taskInput mb-2 mt-5" id="todo-input" placeholder="Add To-Do Task">
+                    <button class="addTask" onclick="addTask('todo')" id="todo-add">Add Task</button>
+                </div>
+
+                <div class="todo-cards" id="doing">
+                    <h3 class="text-center">Doing List</h3>
+                    <div class="tasks" id="doing-tasks"></div>
+                    <input type="text" class="taskInput mb-2 mt-5" id="doing-input" placeholder="Add ongoing Task">
+                    <button class="addTask" onclick="addTask('doing')" id="doing-add">Add Task</button>
+                </div>
+
+                <div class="column todo-cards" id="done">
+                    <h3 class="text-center">Done List</h3>
+                    <div class="tasks" id="done-tasks"></div>
+                    <input type="text" class="taskInput mb-2 mt-5 " id="done-input" placeholder="Add completed Task">
+                    <button class="addTask" onclick="addTask('done')" id="done-add">Add Task</button>
+                </div>
+            </div>
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
